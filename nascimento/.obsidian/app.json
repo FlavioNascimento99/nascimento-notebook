@@ -2,10 +2,11 @@
   "foldIndent": false,
   "showLineNumber": false,
   "spellcheck": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "foldHeading": true,
   "showIndentGuide": false,
   "showInlineTitle": false,
   "tabSize": 5,
-  "promptDelete": false
+  "promptDelete": false,
+  "useTab": false
 }
