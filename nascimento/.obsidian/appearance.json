@@ -1,9 +1,9 @@
 {
   "accentColor": "#4276f0",
-  "interfaceFontFamily": "Candara,Didot",
-  "textFontFamily": "American Typewriter",
+  "interfaceFontFamily": "Candara",
+  "textFontFamily": "Georgia",
   "monospaceFontFamily": "Courier New",
-  "baseFontSize": 12,
+  "baseFontSize": 14,
   "showViewHeader": true,
   "showRibbon": true,
   "cssTheme": ""

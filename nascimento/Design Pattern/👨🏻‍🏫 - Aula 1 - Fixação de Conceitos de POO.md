@@ -1,4 +1,4 @@
-### 🏗 Ideia por trás da reusabilidade de código
+# 🏗 Introdução
 Dentro da área de desenvolvimento de Software é de suma importância ter a visão de importantes métricas como custo e tempo, pois ambas, ao meu ver são sinônimos, afinal, tempo é dinheiro, consequentemente recurso. 
 
 Acontece que um problema aparente no inicio da história do desenvolvimento de software é o **Alto Acoplamento** de código, que implica em camadas dificultadoras relacionadas a manutenção do mesmo.
@@ -28,7 +28,8 @@ Particularmente não gosto da ideia de entender como um "*contrato*" de Classe, 
 
 É interessante fazer o uso de Interfaces pelos seguintes motivos, vai te permitir fazer o tratamento de diferentes classes de maneira uniforme(*igualitária*), separa o famoso "*o que fazer?*" do "*como fazer?*" mantendo tudo no seu devido lugar e de fácil visualização e por fim e talvez o mais impactante em relação custo/tempo, facilita na mudança de implementações sem necessidade de mexer diretamente no código que a utiliza(*a interface, no caso*).
 
-No geral é legal fazer um apanhado do que pode ou não ser implementado em uma Interface, então aqui vai 
+No geral é legal fazer um apanhado do que pode ou não ser implementado em uma Interface, então aqui vai.
+
 - Atributos de instância **NÃO PODEM SER PASSADOS**
 - Atributos de Classe, podem passar sem problemas desde que sejam `public static final` (*logo, são constantes*)
 - Métodos devem ser passados, via polimorfismo ou em casos especiais como `default` ou `static`(*são os métodos que possuem apenas um retorno, não mutáveis.*)
@@ -38,9 +39,13 @@ Princípio `SOLID` *“Programe para o uso de interface, não para implementaç�
 Entenda por fim que, ao trabalharmos utilizando Interfaces, iremos facilitar implementações futuras, pois a partir do momento em que implementamos Interfaces dentro do projeto estamos possibilitando a escalabilidade dentro do nosso código sem o medo de quebrar o que já funciona.
 
 Pra mim é relevante destrinchar ao máximo como essa ideia de interface e polimorfismo funcionam em conjunto. Vamos a um exemplo. 
-1. Temos uma `Interface Payment`, responsável pelo controle de meios de pagamentos dentro de um Sistema, possui os métodos `pay()` e `collectPaymentDetails()`.
-2. Com isso temos alguns meios de pagamento, um deles, `PayByCreditCard() implements Payment` que possui seu obejto `CreditCard` e alguns métodos de lógica para pagar (`pay()` sobrescrito) e coleta de dados (`collectPaymentDetails()` também sobrescrito).
-3. Em `Cart()` fazemos uma instanciação da Interface `Payment` e a utilizamos para construírmos o objeto `Cart(Payment paymentMethod)`, com isso estamos afirmando que precisamos de um objeto que implemente `Payment` não importa seu tipo (`PayByPix` ou `PayByCreditCard`, não importa).
-4. Com isso criamos um `Cart()` que utiliza exatamente de quaisquer meios de pagamento já implementados ou que ainda serão. 
+
+   1. Temos uma `Interface Payment`, responsável pelo controle de meios de pagamentos dentro de um Sistema, possui os métodos `pay()` e `collectPaymentDetails()`.
+
+   2. Com isso temos alguns meios de pagamento, um deles, `PayByCreditCard() implements Payment` que possui seu obejto `CreditCard` e alguns métodos de lógica para pagar (`pay()` sobrescrito) e coleta de dados (`collectPaymentDetails()` também sobrescrito).
+
+   3. Em `Cart()` fazemos uma instanciação da Interface `Payment` e a utilizamos para construírmos o objeto `Cart(Payment paymentMethod)`, com isso estamos afirmando que precisamos de um objeto que implemente `Payment` não importa seu tipo (`PayByPix` ou `PayByCreditCard`, não importa).
+
+   4. Com isso criamos um `Cart()` que utiliza exatamente de quaisquer meios de pagamento já implementados ou que ainda serão.
 
 ### 👨‍👦 Herança e 🧩 Composição

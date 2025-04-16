@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design Pattern/👨🏻‍🏫 - Aula 1 - Fixação de Conceitos de POO.md",
+                "file": "Design Pattern/👨🏻‍🏫 - Aula 2 - SOLID e GRASP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "👨🏻‍🏫 - Aula 1 - Fixação de Conceitos de POO"
+              "title": "👨🏻‍🏫 - Aula 2 - SOLID e GRASP"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de arquivos"
+              "title": "Files"
             }
           },
           {
@@ -160,20 +160,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir a troca rápida": false,
-      "graph:Abrir visualização em gráfico": false,
-      "canvas:Criar novo canvas": false,
-      "daily-notes:Abrir a nota de hoje": false,
-      "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "d1a9ddba371c6c67",
   "lastOpenFiles": [
-    "Desenvolvimento Ágil",
-    "Programação para Web II",
     "Design Pattern/👨🏻‍🏫 - Aula 2 - SOLID e GRASP.md",
     "Design Pattern/👨🏻‍🏫 - Aula 1 - Fixação de Conceitos de POO.md",
+    "Desenvolvimento Ágil",
+    "Programação para Web II",
     "microblog/Microblog Documentation.md",
     "microblog",
     "Design Pattern"
