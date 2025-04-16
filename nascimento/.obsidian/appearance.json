@@ -1,0 +1,10 @@
+{
+  "accentColor": "#4276f0",
+  "interfaceFontFamily": "Didot",
+  "textFontFamily": "American Typewriter",
+  "monospaceFontFamily": "Courier New",
+  "baseFontSize": 12,
+  "showViewHeader": true,
+  "showRibbon": true,
+  "cssTheme": ""
+}
